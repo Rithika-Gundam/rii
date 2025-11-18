@@ -1,4 +1,4 @@
-# rii
+# kubernets
 
 minikube start
 docker login
@@ -15,3 +15,10 @@ openbrowser and in url 127.0.0.1-3080
 ....
 then open another powershell and 
 minikube dashboard
+
+
+# nagioss
+docker pull jasonrivers/nagios:latest
+docker images
+docker run --name nagios4 -d -p 8888:80 jasonrivers/nagios:latest
+docker start -ai nagios4
