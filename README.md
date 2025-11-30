@@ -130,3 +130,8 @@ public class Demo {
 
 
 Right-click on the file → Run As → Java Application     ---->>>MAVEN_JAVA
+---------------Click New Repository (green button or “+” → “New repository”)                        
+ Click Create Repository                                                                                                          Open your project folder in Terminal / PowerShell                                                              git init                                                                                                      git add .
+ git commit -m "Initial Maven project commit"                                                                                                                              git remote add origin https://github.com/Navya-0408/my-maven-java-project.git                                                                                               git branch -M main
+git push -u origin main
+ DONE
