@@ -22,3 +22,26 @@ docker pull jasonrivers/nagios:latest
 docker images
 docker run --name nagios4 -d -p 8888:80 jasonrivers/nagios:latest
 docker start -ai nagios4
+
+
+**#docker cli commands**
+docker pull redis 
+docker run --name my-redis -d redis 
+docker ps 
+docker exec -it my-redis redis-cli  
+ docker stop my-redis
+docker start my-redis 
+docker rm my-redis  
+docker rmi redis
+docker run --name my-redis -d redis 
+docker ps 
+ docker logs my-redis 
+docker network ls 
+docker network create mynet 
+docker run -d --name redis-server --network=mynet redis 
+docker volume create mydata 
+docker volume ls 
+docker volume inspect mydata 
+docker run -d --name my-reds -v mydata:/data redis 
+docker rmi image-name 
+docker pull redis
